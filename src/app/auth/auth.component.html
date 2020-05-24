@@ -1,0 +1,42 @@
+<div class="card">
+    <div *ngIf="!user" class="card text-center">
+      <h6 class="card-header">
+        Social Login 
+      </h6>
+      <div class="card-block">
+        <h4 class="card-title">please signed in</h4>
+      
+      </div>
+      <div class="card-block">
+        
+        <button class="btn btn-social-icon btn-google mx-1" (click)="signingoogle()"><span class="fa fa-google"></span></button>
+        <button class="btn btn-social-icon btn-facebook mx-1" (click)="signinface()"><span class="fa fa-facebook"></span></button>
+       
+      </div>
+    </div>
+
+
+
+    <div *ngIf="user" class="card text-center">
+      <h6 class="card-header">
+        Social Login
+      </h6>
+      <div class="card-block"></div>
+     
+      <div class="card-block">
+        <h4 class="card-title">welcome  {{ user.name }}</h4>
+        <p class="card-text">{{ user.email }}</p>
+      </div>
+      <div class="card-block">
+       
+        <button class="btn btn-warning" (click)="routerhome()">Add</button>
+      </div>
+      <div class="card-block">
+       
+        <button class="btn btn-danger" (click)="signoutgoogle()">Sign out</button>
+      </div>
+
+    </div>
+  </div>
+  <h1>jfjnr</h1>
+  

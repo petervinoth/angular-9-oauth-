@@ -1,0 +1,14 @@
+<h5>Student List</h5>
+    
+  
+  
+  <input type="text" #val>
+  <button  class="btn btn-success" (click)="add(val.value)">Add</button>
+  
+  
+  <ul *ngFor="let Student of student">
+    <li>{{Student.name}} <a href="#" (click)="del(Student)">delete</a>  </li>
+  
+  </ul>
+
+  
